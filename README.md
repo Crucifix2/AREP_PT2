@@ -57,6 +57,22 @@ sudo service docker start
 
 **INSTALAR DOCKER COMPOSE**:
 
+```
+sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+```
+
+```
+sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+```
+
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+```
+docker-compose version
+```
+
 **ELIMINAR TODAS LAS IMÁGENES DE DOCKER**: `docker rmi $(docker images -a -q)`
 **ELIMINAR TODOS LOS CONTENEDORES DE DOCKER**: 
 
